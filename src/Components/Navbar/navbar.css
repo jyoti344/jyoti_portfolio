@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background: #0b1120;
+}
+
+.logo {
+  color: white;
+}
+
+.logo span {
+  color: #3b82f6;
+}
+
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+.links a:hover {
+  color: #3b82f6;
+}

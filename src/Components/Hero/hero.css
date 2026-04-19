@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50vh;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 100%;
+
+  /* CARD STYLE */
+  background: rgba(77, 43, 139, 0.345); /* transparent */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(22, 13, 41, 0.497);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.left{
+    padding: 40px;
+}
+.right{
+    padding: 40px;
+}
+.left h1 {
+  font-size: 60px;
+}
+
+.left span {
+  color: #3b82f6;
+}
+
+.desc {
+  color: #94a3b8;
+  margin: 20px 0;
+}
+
+.buttons button {
+  margin-right: 15px;
+}
+
+.right .circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 150%;
+  border-radius: 150%;
+}
