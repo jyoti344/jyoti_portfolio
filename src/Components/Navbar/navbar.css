@@ -1,10 +1,19 @@
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b1120;
+  z-index: 9999;
+}
+
+/* THIS is the real layout */
+.nav-inner {
+  max-width: 100%;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  position: sticky;
-  top: 0;
-  background: #0b1120;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -16,7 +25,7 @@
 }
 
 .links a {
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
   color: #94a3b8;
 }

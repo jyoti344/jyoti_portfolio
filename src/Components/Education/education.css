@@ -1,0 +1,93 @@
+.education {
+  padding: 80px 20px;
+}
+
+.education h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CENTER LINE */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #3b82f6;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ITEMS */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* LEFT */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* RIGHT */
+.timeline-item.right {
+  left: 50%;
+}
+
+/* DOT */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+  top: 30px;
+  z-index: 2;
+}
+
+/* DOT POSITION FIX */
+.timeline-item.left::after {
+  right: -8px;
+}
+
+.timeline-item.right::after {
+  left: -8px;
+}
+
+/* CARD */
+.content {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* TEXT */
+.content h3 {
+  margin-bottom: 10px;
+  color: #3b82f6;
+}
+
+.content p {
+  margin: 5px 0;
+  color: #cbd5f5;
+}
+
+.content span {
+  font-size: 14px;
+  color: #94a3b8;
+}

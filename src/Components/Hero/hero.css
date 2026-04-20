@@ -1,24 +1,28 @@
+body {
+  padding-top: 120px; /* match navbar height */
+}
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 50vh;
+  height: 65vh;
   padding: 40px;
   margin: 40px auto;
   max-width: 100%;
 
   /* CARD STYLE */
   background: rgba(77, 43, 139, 0.345); /* transparent */
-  backdrop-filter: blur(10px); /* glass effect */
+  backdrop-filter: blur(5px); /* glass effect */
   -webkit-backdrop-filter: blur(10px);
 
-  border-radius: 20px;
+  border-radius: 25px;
   border: 1px solid rgba(22, 13, 41, 0.497);
 
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .left{
     padding: 40px;
+
 }
 .right{
     padding: 40px;
@@ -52,4 +56,33 @@
 .circle img {
   width: 150%;
   border-radius: 150%;
+}
+
+.socials {
+  display: flex;
+  justify-self: start;   /* space between icons */
+  margin-top: 30px; 
+  justify-content: space-between;
+}
+
+.socials a {
+  width: 55px;      /* bigger button */
+  height: 55px;
+  padding: 10px;    /* inner spacing */
+  
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 30%;
+  color: white;
+  font-size: 24px;  /* ICON SIZE (main fix) */
+
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: #3b82f6;
 }

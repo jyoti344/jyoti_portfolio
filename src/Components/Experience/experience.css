@@ -1,0 +1,88 @@
+.experience {
+  padding: 80px 0;
+ 
+}
+
+.experience h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* TIMELINE */
+.exp-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* VERTICAL LINE */
+.exp-timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #3b82f6;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+}
+
+/* ITEM */
+.exp-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+/* DOT */
+.exp-dot {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+/* CARD */
+.exp-content {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+}
+
+.exp-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.exp-content h3 {
+  color: #3b82f6;
+  margin-bottom: 5px;
+}
+
+.exp-content h4 {
+  margin: 5px 0;
+  color: #e2e8f0;
+}
+
+.exp-content span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.exp-content ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.exp-content li {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+}

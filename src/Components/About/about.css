@@ -1,13 +1,22 @@
 .about {
-  padding: 80px 0;
+  width: 100%;
+  min-height: 10vh;        /* full section height */
+  padding-top: 40px; 
+      /* SAME horizontal spacing as navbar */
+  box-sizing: border-box;
+
 }
 
 .about h2 {
-  font-size: 32px;
+  font-size: 36px;
   color: #3b82f6;
+  margin-bottom: 20px;
 }
 
 .about p {
+  padding-left: 2%;
   color: #94a3b8;
-  max-width: 600px;
+  max-width: 100%;         /* increase width (600 was too small) */
+  line-height: 1.7;
+  font-size: 18px;
 }
