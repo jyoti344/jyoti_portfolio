@@ -1,5 +1,6 @@
 import './projects.css';
 import profile from './logo192.jpg';
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -9,18 +10,21 @@ const Projects = () => {
       <div className="grid">
 
         {/* Project 1 */}
+        <Link to="/brain-tumor" className="card-link">
         <div className="card">
           <div className="Image">
             <img src={profile} alt="project" />
           </div>
 
           <div className="content">
-            <h3>ML Project</h3>
+            <h3>Brain Tumor Detection</h3>
             <p>
-              Machine learning model for prediction and data analysis using real datasets.
+              MRI classification using ML (SVC + Logistic Regression).
+
             </p>
           </div>
         </div>
+        </Link>
 
         {/* Project 2 */}
         <div className="card">

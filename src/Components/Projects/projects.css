@@ -83,3 +83,8 @@
 .card:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
