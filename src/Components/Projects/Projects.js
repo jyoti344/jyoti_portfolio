@@ -27,15 +27,15 @@ const Projects = () => {
         </Link>
 
         {/* Project 2 */}
-        <div className="card">
+        <div className="card" onClick={() => window.open("https://jyotiprakash.ct.ws", "_blank")}>
           <div className="Image">
             <img src={profile} alt="project" />
           </div>
 
           <div className="content">
-            <h3>Restaurant System</h3>
+            <h3>100 Greatest Inventions</h3>
             <p>
-              Full-stack restaurant management system with booking, menu and admin dashboard.
+              Full-stack PHP + MySQL project with CRUD operations and admin panel.
             </p>
           </div>
         </div>
