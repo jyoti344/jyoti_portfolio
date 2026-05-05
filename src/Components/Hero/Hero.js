@@ -8,15 +8,15 @@ const Hero = () => {
   return (
     <section className="hero container" id="home">
       <div className="left">
-        <p>Hey, I'm Jyoti 👋</p>
+        <p>Hey, I'm Jyoti Prakash 👋</p>
 
         <h1>
-          <span>Frontend</span><br />
+          <span>Full Stack & ML</span><br />
           Developer
         </h1>
 
         <p className="desc">
-          I build modern web apps with clean UI and powerful backend logic.
+          I build scalable web applications powered by machine learning, strong backend systems, and modern UI.
         </p>
 
         <div className="buttons">
