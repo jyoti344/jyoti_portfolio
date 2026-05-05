@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import './styles/global.css';
 import { initStars } from './utils/starEffect';
-
+import ContactPage from "./pages/ContactPage";
 import Home from './pages/Home';
 import BrainTumor from "./pages/BrainTumor";
 import Intro from './Components/Intro/Intro';
@@ -46,6 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/brain-tumor" element={<BrainTumor />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,85 @@
+/* Page wrapper */
+.contact-page {
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.contact-container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 16px;
+
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+}
+
+/* Text */
+.contact-container p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Inputs */
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-inputs input,
+.contact-inputs textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+.contact-inputs textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Buttons */
+.contact-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-btn-group button {
+  width: 50%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  cursor: pointer;
+}
+
+/* Reset button */
+.contact-reset-btn {
+  background: #334155 !important;
+}
+
+/* Status */
+.contact-success {
+  margin-top: 15px;
+  color: #22c55e;
+}
+
+.contact-error {
+  margin-top: 15px;
+  color: #ef4444;
+}

@@ -1,10 +1,12 @@
 import './hero.css';
 import profile from './logo192.png';
-
+import { useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Hero = () => {
+  const navigate = useNavigate(); // ✅ FIX: move here
+
   return (
     <section className="hero container" id="home">
       <div className="left">
@@ -20,8 +22,16 @@ const Hero = () => {
         </p>
 
         <div className="buttons">
-          <button className="btn primary">Get In Touch</button>
-          <button className="btn secondary">Browse Projects</button>
+          <button 
+            className="btn primary"
+            onClick={() => navigate("/contact")}
+          >
+            Get In Touch
+          </button>
+
+          <a href="#projects" className="btn secondary">
+            Browse Projects
+          </a>
         </div>
 
         {/* SOCIALS */}
