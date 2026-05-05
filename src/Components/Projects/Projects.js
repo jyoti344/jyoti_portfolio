@@ -11,23 +11,38 @@ const Projects = () => {
 
         {/* Project 1 */}
         <Link to="/brain-tumor" className="card-link">
-        <div className="card">
-          <div className="Image">
-            <img src={profile} alt="project" />
-          </div>
+          <div className="card">
+            <div className="Image">
+              <img src={profile} alt="project" />
+            </div>
 
-          <div className="content">
-            <h3>Brain Tumor Detection</h3>
-            <p>
-              MRI classification using ML (SVC + Logistic Regression).
+            <div className="content">
+              <h3>Brain Tumor Detection</h3>
+              <p>
+                MRI classification using ML (SVC + Logistic Regression).
+              </p>
 
-            </p>
+              <span className="demo-text">Live Demo</span>
+
+              <button
+                className="repo-btn"
+                onClick={(e) => {
+                  e.preventDefault(); // stop Link navigation
+                  e.stopPropagation();
+                  window.open("https://github.com/jyoti344/BrainTumor_CNN_ML_Hybrid", "_blank");
+                }}
+              >
+                GitHub →
+              </button>
+            </div>
           </div>
-        </div>
         </Link>
 
         {/* Project 2 */}
-        <div className="card" onClick={() => window.open("https://jyotiprakash.ct.ws", "_blank")}>
+        <div
+          className="card"
+          onClick={() => window.open("https://jyotiprakash.ct.ws", "_blank")}
+        >
           <div className="Image">
             <img src={profile} alt="project" />
           </div>
@@ -37,6 +52,18 @@ const Projects = () => {
             <p>
               Full-stack PHP + MySQL project with CRUD operations and admin panel.
             </p>
+
+            <span className="demo-text">Live Demo</span>
+
+            <button
+              className="repo-btn"
+              onClick={(e) => {
+                e.stopPropagation(); // prevent card click
+                window.open("https://github.com/jyoti344/100-greatest-inventions-that-changed-the-world-completely.-web-", "_blank");
+              }}
+            >
+              GitHub →
+            </button>
           </div>
         </div>
 
@@ -51,6 +78,18 @@ const Projects = () => {
             <p>
               Personal portfolio website showcasing projects, skills and contact details.
             </p>
+
+            <span className="demo-text">Live Demo</span>
+
+            <button
+              className="repo-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open("https://github.com/jyoti344/100-greatest-inventions-that-changed-the-world-completely.-web-", "_blank");
+              }}
+            >
+              GitHub →
+            </button>
           </div>
         </div>
 
