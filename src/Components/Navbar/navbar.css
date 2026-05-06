@@ -2,14 +2,14 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #0b1120;
+  background: rgba(11, 17, 32, 0.9);
+  backdrop-filter: blur(10px);
   z-index: 9999;
 }
 
-/* THIS is the real layout */
 .nav-inner {
-  max-width: 100%;
-  padding: 10px 40px;
+  width: 100%;
+  padding: 14px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,18 +18,48 @@
 
 .logo {
   color: white;
+  font-size: 1.4rem;
 }
 
 .logo span {
   color: #3b82f6;
 }
 
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .links a {
-  margin-left: 25px;
   text-decoration: none;
   color: #94a3b8;
+  transition: 0.3s;
 }
 
 .links a:hover {
   color: #3b82f6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-inner {
+    padding: 14px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
 }

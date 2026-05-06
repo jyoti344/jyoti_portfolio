@@ -1,11 +1,11 @@
 .experience {
   padding: 80px 0;
- 
 }
 
 .experience h2 {
   font-size: 40px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 /* TIMELINE */
@@ -15,7 +15,6 @@
   margin: auto;
 }
 
-/* VERTICAL LINE */
 .exp-timeline::before {
   content: '';
   position: absolute;
@@ -47,7 +46,7 @@
 /* CARD */
 .exp-content {
   background: rgba(30, 41, 59, 0.5);
-  padding: 20px;
+  padding: 22px;
   border-radius: 12px;
   text-align: left;
 
@@ -78,11 +77,45 @@
 }
 
 .exp-content ul {
-  margin-top: 10px;
+  margin-top: 12px;
   padding-left: 18px;
 }
 
 .exp-content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .experience {
+    padding: 60px 0;
+  }
+
+  .experience h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .exp-item {
+    padding-left: 50px;
+  }
+
+  .exp-content {
+    padding: 18px;
+  }
+
+  .exp-content h3 {
+    font-size: 18px;
+  }
+
+  .exp-content h4 {
+    font-size: 15px;
+  }
+
+  .exp-content li,
+  .exp-content span {
+    font-size: 14px;
+  }
 }

@@ -2,32 +2,66 @@ import React from "react";
 import "./contact.css";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+
+  const navigate = useNavigate();
+
   return (
-    <footer className="footer" id = 'contact'>
-  <div className="footer-inner">
-    <h2>📬 Contact Me</h2>
+    <footer className="footer" id="contact">
+      <div className="footer-inner">
 
-    <p className="contact-subtext">
-      Open to internships, collaborations, and opportunities. Let’s connect!
-    </p>
+        <h2>📬 Contact Me</h2>
 
-    <div className="socials">
-      <a href="mailto:jyotiprakashdhala565@gmail.com"><FaEnvelope /></a>
-      <a href="https://www.linkedin.com/in/jyoti-prakash-dhala-8a15bb3a5/"><FaLinkedin /></a>
-      <a href="https://github.com/jyoti344"><FaGithub /></a>
-      <a href="https://leetcode.com/Jyoti565"><SiLeetcode /></a>
-    </div>
+        <p className="contact-subtext">
+          Open to internships, collaborations, and opportunities. Let’s connect!
+        </p>
 
-    <div className="email-box">
-      <p>Email me directly:</p>
-      <a href="mailto:jyotiprakashdhala565@gmail.com">
-        jyotiprakashdhala565@gmail.com
-      </a>
-    </div>
-  </div>
-</footer>
+        {/* BUTTON */}
+        
+
+        {/* SOCIALS */}
+        <div className="socials">
+          <a href="mailto:jyotiprakashdhala565@gmail.com">
+            <FaEnvelope />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jyoti-prakash-dhala-8a15bb3a5/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://github.com/jyoti344"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://leetcode.com/Jyoti565"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiLeetcode />
+          </a>
+        </div>
+
+        {/* EMAIL */}
+        <button
+          className="btn primary"
+          onClick={() => navigate("/contact")}
+        >
+          Get In Touch
+        </button>
+
+      </div>
+    </footer>
   );
 };
 

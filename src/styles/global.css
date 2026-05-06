@@ -129,3 +129,35 @@ body {
   opacity: 1;
   transition: opacity 0.8s ease;
 }
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .intro-title {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  .loader {
+    width: 160px;
+  }
+}

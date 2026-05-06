@@ -137,3 +137,21 @@
 .brain-retry-btn:hover {
   background: #dc2626;
 }
+@media (max-width: 768px) {
+  .brain-page {
+    padding: 20px;
+  }
+
+  .brain-container {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .brain-btn-group {
+    flex-direction: column;
+  }
+
+  .brain-btn-group button {
+    width: 100%;
+  }
+}

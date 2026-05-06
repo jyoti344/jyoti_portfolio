@@ -83,3 +83,21 @@
   margin-top: 15px;
   color: #ef4444;
 }
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 20px;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .contact-btn-group {
+    flex-direction: column;
+  }
+
+  .contact-btn-group button {
+    width: 100%;
+  }
+}

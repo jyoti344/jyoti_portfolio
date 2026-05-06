@@ -1,22 +1,55 @@
 .about {
-  width: 100%;
-  min-height: 10vh;        /* full section height */
-  padding-top: 40px; 
-      /* SAME horizontal spacing as navbar */
-  box-sizing: border-box;
-
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .about h2 {
   font-size: 36px;
   color: #3b82f6;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .about p {
-  padding-left: 2%;
   color: #94a3b8;
-  max-width: 100%;         /* increase width (600 was too small) */
-  line-height: 1.7;
+  line-height: 1.9;
   font-size: 18px;
+
+  width: 100%;
+  text-align: justify;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .about {
+    width: 90%;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about {
+    width: 92%;
+    padding: 40px 0;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 1.8;
+
+    text-align: left;
+  }
 }
