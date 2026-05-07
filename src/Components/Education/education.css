@@ -13,33 +13,43 @@
   position: relative;
   max-width: 1000px;
   margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* CENTER LINE */
 .timeline::after {
   content: '';
   position: absolute;
+
   width: 4px;
   background: #3b82f6;
+
   top: 0;
-  bottom: 0;
+  height: 100%;
+
   left: 50%;
   transform: translateX(-50%);
+}
+.content {
+  width: 100%;
 }
 
 /* ITEMS */
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 40px;
+  padding: 10px 40px;
   box-sizing: border-box;
 }
-
+/* LEFT */
 .timeline-item.left {
   left: 0;
-  text-align: right;
 }
 
+/* RIGHT */
 .timeline-item.right {
   left: 50%;
 }
@@ -47,12 +57,16 @@
 /* DOT */
 .timeline-item::after {
   content: '';
+
   position: absolute;
+
   width: 16px;
   height: 16px;
+
   background: #3b82f6;
   border-radius: 50%;
-  top: 30px;
+
+  top: 35px;
   z-index: 2;
 }
 
@@ -67,29 +81,43 @@
 /* CARD */
 .content {
   background: rgba(30, 41, 59, 0.5);
-  padding: 20px;
-  border-radius: 12px;
+
+  padding: 22px;
+  border-radius: 14px;
+
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.3s;
+}
+
+.content:hover {
+  transform: translateY(-5px);
+  border-color: rgba(59,130,246,0.5);
 }
 
 .content h3 {
   margin-bottom: 10px;
   color: #3b82f6;
+
+  font-size: 28px;
 }
 
 .content p {
   margin: 5px 0;
   color: #cbd5f5;
+
+  font-size: 18px;
 }
 
 .content span {
-  font-size: 14px;
+  font-size: 15px;
   color: #94a3b8;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+
   .education {
     padding: 60px 15px;
   }
@@ -99,15 +127,20 @@
     margin-bottom: 35px;
   }
 
+  .timeline {
+    gap: 15px;
+  }
+
   .timeline::after {
     left: 18px;
   }
 
   .timeline-item {
     width: 100%;
+
     padding-left: 55px;
     padding-right: 10px;
-    margin-bottom: 25px;
+
     text-align: left !important;
   }
 
@@ -118,7 +151,7 @@
 
   .timeline-item::after {
     left: 10px;
-    top: 28px;
+    top: 32px;
   }
 
   .timeline-item.left::after,
@@ -131,11 +164,14 @@
   }
 
   .content h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
-  .content p,
+  .content p {
+    font-size: 15px;
+  }
+
   .content span {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
