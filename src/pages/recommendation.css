@@ -1,0 +1,157 @@
+/* recommendation.css */
+
+.recommend-page {
+  min-height: 100vh;
+  background: #0f172a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.recommend-container {
+  width: 100%;
+  max-width: 1200px;
+
+  padding: 35px;
+  border-radius: 16px;
+
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+}
+
+.recommend-container h1 {
+  margin-bottom: 14px;
+  font-size: 38px;
+}
+
+.recommend-desc {
+  color: #94a3b8;
+  font-size: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Tech Stack */
+
+.recommend-tech {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.recommend-tech span {
+  padding: 10px 16px;
+
+  border-radius: 30px;
+
+  background: rgba(59,130,246,0.15);
+  border: 1px solid rgba(59,130,246,0.4);
+
+  color: #93c5fd;
+  font-size: 14px;
+}
+
+/* Gallery */
+
+.recommend-gallery {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+
+/* Card */
+
+.recommend-card {
+  background: rgba(15, 23, 42, 0.85);
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s ease;
+}
+
+.recommend-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 25px rgba(59,130,246,0.25);
+}
+
+/* FULL IMAGE */
+
+.recommend-card img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
+}
+
+/* Info Below Image */
+
+.recommend-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.recommend-info h3 {
+  margin-bottom: 10px;
+
+  color: white;
+  font-size: 24px;
+}
+
+.recommend-info p {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.recommend-footer {
+  margin-top: 35px;
+
+  padding: 18px;
+  border-radius: 10px;
+
+  background: rgba(59,130,246,0.1);
+  border-left: 5px solid #3b82f6;
+}
+
+.recommend-footer p {
+  color: #cbd5e1;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .recommend-container {
+    padding: 20px;
+  }
+
+  .recommend-container h1 {
+    font-size: 30px;
+  }
+
+  .recommend-info h3 {
+    font-size: 22px;
+  }
+}

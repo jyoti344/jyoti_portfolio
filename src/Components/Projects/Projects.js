@@ -99,44 +99,47 @@ const Projects = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="card">
+        <Link to="/recommendation-system" className="card-link">
+          <div className="card">
 
-          <div className="Image">
-            <img src={profile} alt="project" />
-          </div>
+            <div className="Image">
+              <img src={profile} alt="project" />
+            </div>
 
-          <div className="content">
+            <div className="content">
 
-            <h3>Portfolio</h3>
+              <h3>Recommendation System</h3>
 
-            <p>
-              Personal portfolio website showcasing projects,
-              skills and contact details.
-            </p>
+              <p>
+                Smart product recommendation system with search,
+                product suggestions and ordering workflow.
+              </p>
 
-            <div className="card-buttons">
+              <div className="card-buttons">
 
-              <span className="demo-text">
-                Live Demo
-              </span>
+                <span className="demo-text">
+                  View Screenshots
+                </span>
 
-              <button
-                className="repo-btn"
-                onClick={(e) => {
-                  e.stopPropagation();
+                <button
+                  className="repo-btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                  window.open(
-                    "https://github.com/jyoti344",
-                    "_blank"
-                  );
-                }}
-              >
-                GitHub →
-              </button>
+                    window.open(
+                      "https://github.com/jyoti344",
+                      "_blank"
+                    );
+                  }}
+                >
+                  GitHub →
+                </button>
 
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
 
       </div>
     </section>

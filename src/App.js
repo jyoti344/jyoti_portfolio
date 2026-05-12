@@ -6,6 +6,7 @@ import { initStars } from './utils/starEffect';
 import ContactPage from "./pages/ContactPage";
 import Home from './pages/Home';
 import BrainTumor from "./pages/BrainTumor";
+import RecommendationSystem from "./pages/RecommendationSystem";
 import Intro from './Components/Intro/Intro';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/brain-tumor" element={<BrainTumor />} />
+          <Route path="/recommendation-system" element={<RecommendationSystem />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
